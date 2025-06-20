@@ -61,7 +61,7 @@ bookRouter.get('/:bookId', async (req: Request, res: Response) => {
 bookRouter.put('/:bookId', async (req: Request, res: Response) => {
   const { bookId } = req.params;
   const book = req.body;
-  const updateBook = await Book.findByIdAndUpdate(bookId,book,{new:true});
+  const updateBook = await Book.findByIdAndUpdate(bookId, book, { new: true });
   res.status(201).json({
     success: true,
     message: 'Book updated successfully',
@@ -69,3 +69,13 @@ bookRouter.put('/:bookId', async (req: Request, res: Response) => {
   });
 });
 
+//delete book by id
+bookRouter.delete('/:bookId', async (req:Request, res:Response) => {
+  const { bookId } = req.params;
+  const book = await Book.findByIdAndDelete(bookId);
+  res.status(201).json({
+    success: true,
+    message: 'Book deleted successfully',
+    data: null
+  });
+});

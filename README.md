@@ -12,9 +12,9 @@ An Express, TypeScript & MongoDB for managing books in a library system. Feature
 
 ##  🛠️ Setup Instructions
 -  ### Clone the Repository :
-   git clone https://github.com/your-username/ book-management-api.git
+   git clone [https://github.com/your-username/ book-management-api.git](https://github.com/HamimBhai742/L2-Assignment-03.git)
    
-   cd book-management-api
+   cd L2-Assignment-03
 
 - ### Install Dependencies :
      npm install

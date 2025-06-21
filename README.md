@@ -9,6 +9,8 @@ An Express, TypeScript & MongoDB for managing books in a library system. Feature
 - Retrieve a book by ID
 - Update book details
 - Delete a book by ID
+- Borrow a Book
+- Borrowed Books Summary (Using Aggregation)
 
 ##  🛠️ Setup Instructions
 -  ### Clone the Repository :

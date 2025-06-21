@@ -1,4 +1,4 @@
-import  { Schema } from "mongoose";
+import  { model, Schema } from "mongoose";
 
 const BorrowSchema = new Schema({
   book: {
@@ -14,4 +14,10 @@ const BorrowSchema = new Schema({
     type: Date,
     required: true,
   },
+},{
+  timestamps: true,
+  versionKey: false
 });
+
+export const Borrow = model('Borrow', BorrowSchema);
+

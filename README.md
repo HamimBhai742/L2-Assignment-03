@@ -23,5 +23,5 @@ An Express, TypeScript & MongoDB for managing books in a library system. Feature
 
 ### Dependencies: 
 - Express
-- Mongoose
+- MongoDB with Mongoose
 - TypeScript

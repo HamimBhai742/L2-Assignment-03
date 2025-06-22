@@ -29,7 +29,7 @@ const BookSchema = new Schema<IBook, BookStatic>(
     isbn: {
       type: String,
       required: [true, 'ISBN is required'],
-      unique: [true, 'ISBN must be unique'],
+      unique: true,
     },
     description: {
       type: String,

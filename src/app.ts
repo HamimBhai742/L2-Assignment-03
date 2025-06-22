@@ -12,7 +12,8 @@ app.use('/api/borrow', borrowRouter);
 
 //running server
 app.get('/', (req, res) => {
-  res.send('Wellcome to libray API');
+  res.send('Wellcome to library Management API');
 });
+
 
 export default app;
